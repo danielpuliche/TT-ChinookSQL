@@ -113,10 +113,11 @@ INNER JOIN InvoiceLine IL ON IL.InvoiceId = I.InvoiceId
 INNER JOIN Track T ON T.TrackId = IL.TrackId
 INNER JOIN Genre G ON G.GenreId = T.GenreId
 WHERE G.Name = 'Rock'
-ORDER BY C.FirstName 
+GROUP BY C.CustomerId
+ORDER BY C.FirstName
 ```
 
-![alt text](image-6.png)
+![alt text](image-13.png)
 
 # Ejercicio 6
 
