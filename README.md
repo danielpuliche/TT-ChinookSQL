@@ -64,7 +64,7 @@ Se quiere promocionar un nuevo festival musical, para ello es necesario saber en
 ```sql
 SELECT 
 	BillingCity,
-    count(InvoiceId)
+    sum(InvoiceId)
 FROM 
 	Invoice
 GROUP BY 1
@@ -72,7 +72,7 @@ ORDER BY 2 DESC
 LIMIT 1
 ```
 
-![alt text](image-4.png)
+![alt text](image-6.png)
 
 # Ejercicio 4
 
